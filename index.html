@@ -16,19 +16,26 @@
         <div class="container bg-light p-2 text-center">
             <div class="row">
                 <div class="col">
-                    <p>Nome Cognome</p>
-                    <input type="text" id="name">
+                    <p class="text-danger">Nome Cognome</p>
+                    <input type="text" class="border-danger" id="name">
                 </div>
                 <div class="col">
-                    <p>KM da percorrere</p>
-                    <input type="text" id="distance">
+                    <p class="text-danger">KM da percorrere</p>
+                    <input type="text" class="border-danger" id="distance">
                 </div>
                 <div class="col">
-                    <p>Fascia d'età</p>
-                    <select id="age" name="scelta">
+                    <p class="text-danger">Fascia d'età</p>
+                    <select class="border-danger" id="age" name="scelta">
                         <option value="opzione1">Maggiorenne</option>
                         <option value="opzione2">Minorenne</option>
                         <option value="opzione3">Over 65</option>
+                    </select>    
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <button class="btn btn-secondary text-danger-emphasis" id="genera"><strong>Genera</strong></button>
+                    <button class="btn btn-secondary text-danger-emphasis" id="annulla"><strong>Annulla</strong></button>
                 </div>
             </div>
         </div>

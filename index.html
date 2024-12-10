@@ -17,16 +17,16 @@
             <div class="container bg-light p-2 text-center">
                 <div class="row">
                     <div class="col">
-                        <p class="text-danger">Nome Cognome</p>
-                        <input type="text" class="border-danger" id="name">
+                        <p class="text-danger"><strong>Nome Cognome</strong></p>
+                        <input type="text" class="border-danger rounded" id="name">
                     </div>
                     <div class="col">
-                        <p class="text-danger">KM da percorrere</p>
-                        <input type="number" class="border-danger" id="distance">
+                        <p class="text-danger"><strong>KM da percorrere</strong></p>
+                        <input type="number" class="border-danger rounded custom-width" id="distance">
                     </div>
                     <div class="col">
-                        <p class="text-danger">Fascia d'età</p>
-                        <select class="border-danger" id="age" name="scelta">
+                        <p class="text-danger"><strong>Fascia d'età</strong></p>
+                        <select class="border-danger rounded custom-width" id="age" name="scelta">
                             <option value="opzione1">Maggiorenne</option>
                             <option value="opzione2">Minorenne</option>
                             <option value="opzione3">Over 65</option>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="row mt-2">
-                    <div class="col">
+                    <div class="col my-4">
                         <button class="btn btn-secondary text-danger-emphasis" id="genera"><strong>Genera</strong></button>
                         <button class="btn btn-secondary text-danger-emphasis" id="annulla"><strong>Annulla</strong></button>
                     </div>
@@ -43,32 +43,34 @@
         </section>
         <section class="d-none" id="personal_ticket">
             <h1 class="text-center text-light mt-5">IL TUO BIGLIETTO</h1>
-            <div class="container bg-light">
-                <p><strong>DETTAGLIO PASSEGERI</strong></p>
-                <hr class="m-0">
-                <div class="row">
-                    <div class="col bg-secondary">
-                        <div><strong>NOME PASSEGGERO</strong></div>
-                        <div id="passenger"></div>
-                    </div>
-                    <div class="col">
-                        <p><strong>Offerta</strong></p>
-                        <div id="offer"></div>
-                    </div>
-                    <div class="col">
-                        <p><strong>Carrozza</strong></p>
-                        <div id="carrozza"></div>
-                    </div>
-                    <div class="col">
-                        <p><strong>Codice CP</strong></p>
-                        <div id="cod_cp"></div>
-                    </div>
-                    <div class="col">
-                        <p><strong>Costo biglietto</strong></p>
-                        <div id="price_ticket"></div>
+            <div class="container bg-light px-4 p-2">
+                <h4><strong>DETTAGLIO PASSEGERI</strong></h4>
+                <div class="container">
+                    <hr class="m-0">
+                    <div class="row">
+                        <div class="col bg-secondary">
+                            <div class="mt-3"><strong>NOME PASSEGGERO</strong></div>
+                            <div class="mb-3" id="passenger"><strong></strong></div>
+                        </div>
+                        <div class="col">
+                            <p class="mt-3"><strong>Offerta</strong></p>
+                            <div class="mb-3" id="offer"></div>
+                        </div>
+                        <div class="col">
+                            <p class="mt-3"><strong>Carrozza</strong></p>
+                            <div class="mb-3" id="carrozza"></div>
+                        </div>
+                        <div class="col">
+                            <p class="mt-3"><strong>Codice CP</strong></p>
+                            <div class="mb-3" id="cod_cp"></div>
+                        </div>
+                        <div class="col">
+                            <p class="mt-3"><strong>Costo biglietto</strong></p>
+                            <div class="mb-3" id="price_ticket"></div>
+                        </div>
+                        <hr class="mb-3">
                     </div>
                 </div>
-                <hr class="pb-3">
             </div>
         </section>
     </main>
